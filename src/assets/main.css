@@ -52143,3 +52143,7 @@ video {
     transition-duration: 1000ms;
   }
 }
+
+.active {
+    color: #f6ad55;
+}
