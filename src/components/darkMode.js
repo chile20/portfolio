@@ -1,14 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import './App.css';
 import { Helmet, HelmetProvider } from "react-helmet-async";
-// Import Browser Router and Pages
-import { BrowserRouter, Switch, Route } from 'react-router-dom'; 
-import Home from './components/Home';
-import Work from './components/Work';
-import About from './components/About';
 //Import Components
-import torchLight from './assets/torch-light.svg';
-import torchDark from './assets/torch-dark.svg'
+import torchLight from '../assets/torch-light.svg';
+import torchDark from '../assets/torch-dark.svg'
 
 const useLocalState = (key, defaultValue) => {
   const [value, setValue] = useState(() => {
@@ -41,7 +35,7 @@ const useLocalState = (key, defaultValue) => {
   return [value, setValueInLocalStorage];
 };
 
-export default function App() {
+export default function DarkModeButton() {
   const [theme, setTheme] = useLocalState("theme", "light");
 
   return (
@@ -59,43 +53,6 @@ export default function App() {
           alt="toggle theme"
         />
       </button>
-      
-        <BrowserRouter basename="/portfolio"> 
-          <div className="App">
-            <Switch>
-                <Route exact path="/">
-                  <Home />
-                </Route>
-                <Route path="/about">
-                  <About />
-                </Route>
-                <Route path="/work">
-                  <Work />
-                </Route>
-            </Switch>
-          </div>
-        </BrowserRouter>
   </HelmetProvider>
   );
 }
-
-// function App() {  return (
-//     <BrowserRouter basename="/portfolio"> 
-//       <div className="App">
-//         <Switch>
-//             <Route exact path="/">
-//               <Home />
-//             </Route>
-//             <Route path="/about">
-//               <About />
-//             </Route>
-//             <Route path="/work">
-//               <Work />
-//             </Route>
-//         </Switch>
-//     </div>
-//     </BrowserRouter>
-//   );
-// }
-
-// export default App;
