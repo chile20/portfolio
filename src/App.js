@@ -9,11 +9,11 @@ import About from './components/About';
 
 function App() {
   return (
-    <Router basename="/"> 
+    <Router> 
     <div>
-    <Route exact path='/' component={Home} />
-    <Route exact path='/about' component={About} />
-    <Route exact path='/work' component={Work} />
+    <Route path='/' component={Home} />
+    <Route path='/about' component={About} />
+    <Route path='/work' component={Work} />
     </div>
   </Router>
   );
