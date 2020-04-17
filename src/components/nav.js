@@ -13,7 +13,7 @@ class Nav extends Component {
                 
                 <NavLink exact to="/" activeClassName="active" className="mr-16 lg:p-4 py-3 px-0 border-transparent border-b-2 hover:border-orange-400">Home</NavLink>
                 <NavLink exact to="/work" activeClassName="active" className="mr-16 lg:p-4 py-3 px-0 border-transparent border-b-2 hover:border-orange-400">Work</NavLink>
-                <NavLink exact to="/about" activeClassName="active" className="mr-16 lg:p-4 py-3 border-transparent border-b-2 hover:border-orange-400">About</NavLink>
+                <NavLink exact to="/about" activeClassName="active" className="lg:p-4 py-3 border-transparent border-b-2 hover:border-orange-400">About</NavLink>
                 <DarkModeButton />
               </nav>
             </div>
