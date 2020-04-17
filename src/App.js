@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 // Import Browser Router and Pages
-import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'; 
+import { BrowserRouter, Switch, Route } from 'react-router-dom'; 
 import Home from './components/Home';
 import Work from './components/Work';
 import About from './components/About';
@@ -9,13 +9,21 @@ import About from './components/About';
 
 function App() {
   return (
-    <Router> 
-    <div>
-    <Route path='/' component={Home} />
-    <Route path='/about' component={About} />
-    <Route path='/work' component={Work} />
+    <BrowserRouter basename="/portfolio"> 
+    <div className="App">
+      <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/work">
+            <Work />
+          </Route>
+      </Switch>
     </div>
-  </Router>
+    </BrowserRouter>
   );
 }
 
