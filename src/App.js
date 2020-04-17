@@ -62,22 +62,23 @@ export default function App() {
       </button>
       
       <input value={username} onChange={(e) => setUsername(e.target.value)} />
-      <BrowserRouter basename="/portfolio"> 
-      <div className="App">
-        <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/work">
-              <Work />
-            </Route>
-        </Switch>
-    </div>
-    </BrowserRouter>
-    </HelmetProvider>
+
+        <BrowserRouter basename="/portfolio"> 
+          <div className="App">
+            <Switch>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route path="/about">
+                  <About />
+                </Route>
+                <Route path="/work">
+                  <Work />
+                </Route>
+            </Switch>
+          </div>
+        </BrowserRouter>
+  </HelmetProvider>
   );
 }
 
