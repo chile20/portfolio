@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // Import Browser Router and Pages
 import { NavLink } from 'react-router-dom'; 
-import DarkModeButton from './darkMode';
+import DarkModeButton from '../actions/darkMode';
 
 class Nav extends Component {
   render() {

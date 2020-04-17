@@ -1,8 +1,8 @@
 // src/Work.js
 import React from "react";
 // Import Components
-import Nav from './nav';
-import Footer from './footer';
+import Nav from '../components/nav';
+import Footer from '../components/footer';
 
 function Work(props) {
   return (

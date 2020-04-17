@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 // Import Browser Router and Pages
 import { BrowserRouter, Switch, Route } from 'react-router-dom'; 
-import Home from './components/Home';
-import Work from './components/Work';
-import About from './components/About';
+import Home from './containers/Home';
+import Work from './containers/Work';
+import About from './containers/About';
 //Import Components
 
 function App() {
