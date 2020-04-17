@@ -1,10 +1,15 @@
 // src/Work.js
 import React from "react";
+// Import Components
+import Nav from './nav';
+import Footer from './footer';
 
 function Work(props) {
   return (
-    <div className="App">
-        <h1>Work</h1>
+    <div className="App"> 
+      <Nav />
+      Work
+      <Footer />
     </div>
   );
 }

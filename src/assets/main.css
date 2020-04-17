@@ -562,7 +562,7 @@ iframe,
 embed,
 object {
   display: block;
-  /* vertical-align: middle; */
+  vertical-align: middle;
 }
 
 /**
@@ -52142,8 +52142,4 @@ video {
   .xl\:duration-1000 {
     transition-duration: 1000ms;
   }
-}
-
-.active {
-    color: #f6ad55;
 }
