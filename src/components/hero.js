@@ -9,7 +9,7 @@ class Hero extends Component {
   <div className="container max-w-4xl mx-auto py-8 sm:py-4 sm:pb-4 px-4">
 
     <div className="flex flex-col text-center w-full mb-8">
-        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2">Hi there</h1>
+        <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2">Hi there</h1>
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">This portfolio site was designed and coded during the Covid-19 pandemic.</p>
     </div>
 

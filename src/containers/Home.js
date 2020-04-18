@@ -4,12 +4,14 @@ import React from "react";
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import Hero from '../components/hero';
+import Articles from '../components/articles';
 
 function Home(props) {
   return (
     <div className="App"> 
       <Nav />
         <Hero />
+        <Articles />
       <Footer />
     </div>
   );
