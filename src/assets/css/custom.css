@@ -1,6 +1,5 @@
 .active {
     color: #f6ad55;
-    font-weight: 600;
 }
 
 body {
@@ -11,9 +10,8 @@ body {
   font-size: 18px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.logo {
+  font-family: 'Quicksand', sans-serif;
 }
 
 :root {
