@@ -45,10 +45,10 @@ export default function DarkModeButton() {
       </Helmet>
 
       <button
-        className="absolute top-0 right-0 focus:outline-none"
+        className="top-0 right-0 focus:outline-none"
         onClick={() => setTheme((cur) => (cur === "light" ? "dark" : "light"))}
       >
-        <img className=" h-12 w-18 p-4"
+        <img className="absolute top-0 right-0 md:top-auto md:right-auto md:relative h-12 w-18 p-4"
           src={theme === "light" ? torchDark : torchLight}
           alt="toggle theme"
         />
