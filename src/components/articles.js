@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
+// Import Components
 import SampleCard from './sampleCard';
+// Import Photos
+import coverDoyou from '../assets/images/img-cover-doyou.png';
+import coverTravaria from '../assets/images/img-cover-travaria.png';
+import coverDoyou2 from '../assets/images/img-cover-doyou2.png';
+import coverLeap from '../assets/images/img-cover-leap.png';
 
 class Articles extends Component {
   render() {
@@ -10,28 +16,40 @@ class Articles extends Component {
     <div className="flex flex-wrap -m-4">
 
     <SampleCard 
-        cardSubtitle={"UI-UX"}
+        cardLink={"https://www.behance.net/gallery/95472757/Travaria-Case-Study"}
+        cardImage={coverTravaria}
         cardTitle={"Travaria"}
-        cardDescription={"A travel platform" }
+        tagFirst={"MVP"}
+        tagSecond={"Web Design"}
+        tagThird={"Travel"}
     /> 
 
 <SampleCard 
-        cardSubtitle={"UI-UX"}
-        cardTitle={"Travaria"}
-        cardDescription={"A travel platform" }
+        cardLink={"https://www.behance.net/gallery/89141261/DoYou-User-Interface-Breakdown"}
+        cardImage={coverDoyou2}
+        cardTitle={"DOYOU UI"}
+        tagFirst={"UI"}
+        tagSecond={"Mobile App"}
+        tagThird={"Wellness"}
     /> 
 
 
 <SampleCard 
-        cardSubtitle={"UI-UX"}
-        cardTitle={"Travaria"}
-        cardDescription={"A travel platform" }
+        cardLink={"https://www.behance.net/gallery/85092555/DoYouYoga-Add-to-Favorites"}
+        cardImage={coverDoyou}
+        cardTitle={"DOYOU"}
+        tagFirst={"Redesign"}
+        tagSecond={"Mobile App"}
+        tagThird={"Wellness"}
     /> 
 
 <SampleCard 
-        cardSubtitle={"UI-UX"}
-        cardTitle={"Travaria"}
-        cardDescription={"A travel platform" }
+        cardLink={"https://www.behance.net/gallery/89141269/LeapXpert-Integrated-Chats"}
+        cardImage={coverLeap}
+        cardTitle={"LeapXpert"}
+        tagFirst={"UI - UX"}
+        tagSecond={"Web Design"}
+        tagThird={"Communication"}
     /> 
 
     </div>
