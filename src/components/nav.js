@@ -9,7 +9,7 @@ class Nav extends Component {
       <header className="body-font">
   <div className="container max-w-4xl mx-auto flex flex-wrap pt-8 flex-col lg:flex-row items-center justify-end">
     <a className="flex order-first lg:order-none lg:w-1/5 title-font items-center sm:items-center sm:justify-center mb-4 md:mb-0" href="/">
-      <span className=" sm:text-3xl text-2xl logo">CHILE</span>
+      <span className=" sm:text-3xl text-2xl logo">CHI LE</span>
     </a>
     <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
       <DarkModeButton />
