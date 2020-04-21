@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
             <footer className="text-gray-700 font-body">
-            <div className="container max-w-4xl mx-auto py-8 sm:py-8 px-8 flex items-center sm:flex-row flex-col">
+            <div className="container max-w-4xl mx-auto py-8 sm:py-8 px-4 flex items-center sm:flex-row flex-col">
                 <p className="text-sm text-gray-500 sm:py-2 sm:mt-0 mt-4">© 2020 - by Chi Le
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
