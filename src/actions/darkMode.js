@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 //Import Components
-import torchLight from '../assets/icons/torch-light.svg';
-import torchDark from '../assets/icons/torch-dark.svg'
+import torchLight from '../assets/icons/ic-torch-light.svg';
+import torchDark from '../assets/icons/ic-torch-dark.svg'
 
 const useLocalState = (key, defaultValue) => {
   const [value, setValue] = useState(() => {
