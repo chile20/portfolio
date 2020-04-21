@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // Import Components
-import SampleCard from './sampleCard';
+import Card from './card';
 // Import Photos
 import coverDoyou from '../assets/images/img-cover-doyou.png';
 import coverTravaria from '../assets/images/img-cover-travaria.png';
@@ -10,12 +10,11 @@ import coverLeap from '../assets/images/img-cover-leap.png';
 class Articles extends Component {
   render() {
     return (
-<section className="text-gray-700 body-font">
+      <section className="text-gray-700 body-font">
 
   <div className="container max-w-4xl mx-auto py-8 sm:py-4 sm:pb-4 px-4">
-    <div className="flex flex-wrap -m-4">
-
-    <SampleCard 
+  <div className="flex flex-row flex-wrap -mx-4">
+  <Card
         cardLink={"https://www.behance.net/gallery/95472757/Travaria-Case-Study"}
         cardImage={coverTravaria}
         cardTitle={"Travaria"}
@@ -24,7 +23,7 @@ class Articles extends Component {
         tagThird={"Travel"}
     /> 
 
-<SampleCard 
+<Card 
         cardLink={"https://www.behance.net/gallery/89141261/DoYou-User-Interface-Breakdown"}
         cardImage={coverDoyou2}
         cardTitle={"DOYOU UI"}
@@ -34,7 +33,7 @@ class Articles extends Component {
     /> 
 
 
-<SampleCard 
+<Card 
         cardLink={"https://www.behance.net/gallery/85092555/DoYouYoga-Add-to-Favorites"}
         cardImage={coverDoyou}
         cardTitle={"DOYOU"}
@@ -43,16 +42,16 @@ class Articles extends Component {
         tagThird={"Wellness"}
     /> 
 
-<SampleCard 
+<Card 
         cardLink={"https://www.behance.net/gallery/89141269/LeapXpert-Integrated-Chats"}
         cardImage={coverLeap}
         cardTitle={"LeapXpert"}
-        tagFirst={"UI - UX"}
+        tagFirst={"UI"}
         tagSecond={"Web Design"}
         tagThird={"Communication"}
     /> 
+  </div>
 
-    </div>
   </div>
 </section>
 
