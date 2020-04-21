@@ -21,3 +21,15 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/assets/images/img-cover-leap.png
+src/assets/images/img-cover-reddispatch.png
+src/assets/images/img-cover-travaria.png
+src/components/articles.js
+src/components/card.js
+src/components/footer.js
+src/components/hero.js
+src/components/nav.js
+src/components/sampleCard.js
+src/components/stats.js
+src/containers/About.js
+src/containers/Work.js
