@@ -2,13 +2,13 @@
 import React from "react";
 // Import Components
 import Footer from '../components/footer';
-import Hero from '../components/hero';
+import Stats from '../components/stats';
 import Articles from '../components/articles';
 
 function Work(props) {
   return (
     <div className="App"> 
-        <Hero />
+        <Stats />
         <Articles />
       <Footer />
     </div>
