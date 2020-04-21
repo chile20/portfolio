@@ -12,7 +12,7 @@ class Articles extends Component {
     return (
       <section className="text-gray-700 body-font">
 
-  <div className="container max-w-4xl mx-auto py-8 sm:py-4 sm:pb-4 px-4">
+  <div className="container max-w-4xl mx-auto sm:py-4 px-4">
   <div className="flex flex-row flex-wrap -mx-4">
   <Card
         cardLink={"https://www.behance.net/gallery/95472757/Travaria-Case-Study"}

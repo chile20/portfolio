@@ -36,7 +36,7 @@ const useLocalState = (key, defaultValue) => {
 };
 
 export default function DarkModeButton() {
-  const [theme, setTheme] = useLocalState("theme", "light");
+  const [theme, setTheme] = useLocalState("theme", "dark");
 
   return (
     <HelmetProvider>
@@ -46,10 +46,10 @@ export default function DarkModeButton() {
 
       <button
         className="top-0 right-0 focus:outline-none"
-        onClick={() => setTheme((cur) => (cur === "light" ? "dark" : "light"))}
+        onClick={() => setTheme((cur) => (cur === "dark" ? "light" : "dark"))}
       >
         <img className="absolute top-0 right-0 md:top-auto md:right-auto md:relative h-12 w-18 p-4"
-          src={theme === "light" ? torchDark : torchLight}
+          src={theme === "dark" ? torchLight : torchDark}
           alt="toggle theme"
         />
       </button>
