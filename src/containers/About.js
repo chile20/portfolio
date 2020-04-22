@@ -4,41 +4,41 @@ import React from "react";
 import Footer from '../components/footer';
 // Import Assets
 import bannerAbout from '../assets/images/img-about-banner.png';
+import Resume from '../assets/chile-resume.pdf';
 
 function About(props) {
   return (
     <div className="App"> 
-      <div className="max-w-4xl mx-auto sm:p-4">
+      <div className="max-w-4xl mx-auto p-4">
 
-      <div className="relative h-40 sm:h-64">
-          <img alt="gallery" className="inset-0 w-full sm:w-10/12 h-full object-cover sm:rounded-lg float-right" src={bannerAbout} />
-            <div className="absolute top-0 rounded-lg py-12 sm:py-24 px-4">  
-              <h1 className="text-2xl sm:text-3xl font-semibold text-left"><span className="">Hi there</span><span className="sm:px-3"></span> <span className="sm:text-white">I'm Chi</span></h1>
-              <p className="text-left text-sm font-semibold">product designer <span className="sm:px-3"></span><span className="text-white">from Long Beach</span></p>
+      <div className="md:relative h-64 sm:h-64">
+          <img alt="gallery" className="md:inset-0 w-full md:w-5/6 h-40 md:h-64 object-cover md:rounded-lg md:float-right" src={bannerAbout} />
+            <div className="md:absolute md:top-0 py-6 md:py-24">  
+              <h1 className="text-base sm:text-4xl font-semibold text-left py-1"><span className="">Hi there</span><span className="md:px-2"></span> <span className="md:text-white">I'm Chi</span></h1>
+              <p className="text-left text-base font-semibold pb-2">product designer <span className="md:px-4"></span><span className="md:text-white">from Long Beach, CA</span></p>
             </div>
       </div>
-      
-      {/* <div className="flex relative h-48 sm:h-64">
-          <img alt="gallery" className="absolute inset-0 w-full h-full object-cover sm:rounded-lg" src={bannerAbout} />
-            <div className="px-4 py-16 relative z-10 rounded-lg p-6">  
-              <h1 className="text-2xl text-lg font-semibold text-left text-white">Hi there, I'm Chi</h1>
-              <p className="text-white text-left text-sm font-semibold">product designer from Long Beach</p>
-            </div>
-      </div> */}
+
+<div className="sm:flex max-w-4xl mx-auto py-4 sm:py-16">
+    <h1 className="sm:w-1/2 pb-1 text-left text-base sm:text-4xl font-semibold">I am also a</h1>
+      <div className="sm:w-1/2 text-left text-base sm:text-lg font-regular">
+      <p className="py-1 sm:py-4">• <span className="px-1"></span>College student in Cypress College</p>
+      <p className="py-1 sm:py-4">• <span className="px-1"></span>Learning front-end developer</p>
+      <p className="py-1 sm:py-4">• <span className="px-1"></span>Aspiring baker with a huge sweet tooth</p>
+      <a href={Resume} download className="flex items-center px-5 py-1 sm:py-4 text-orange-400">
+      Download my resume
+      </a>
+      </div>
+</div>
+
+<div className="sm:flex max-w-4xl mx-auto py-4 sm:py-16">
+    <h1 className="sm:w-1/2 pb-1 text-left text-base sm:text-4xl font-semibold">What I am doing</h1>
+      <div className="sm:w-1/2 text-left text-base sm:text-lg font-regular">
+      <p className="py-1 sm:py-4">• <span className="px-1"></span>Design and code my portfolio using ReactJS</p>
+      </div>
+</div>
 
 
-<div className="max-w-4xl mx-auto p-4">
-    <h1 className="pt-4 pb-1 text-left text-2xl font-semibold">I am a</h1>
-    <div className="text-left text-base font-regular text-gray-500">
-    <p className="py-3">Innovative product designer</p>
-    <p className="py-3">Learning front-end developer</p>
-    <p className="py-3">Passionate cook with a huge sweet tooth</p>
-    </div>
-    <h1 className="pt-4 pb-1 text-left text-2xl font-semibold">What I'm doing</h1>
-    <div className="text-left text-base font-regular text-gray-500">
-    <p className="py-3">Design and code my portfolio using ReactJS</p>
-    </div>
-    </div>
       </div>
 
     

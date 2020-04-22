@@ -7,7 +7,7 @@ import Articles from '../components/articles';
 
 function Work(props) {
   return (
-    <div className="App"> 
+    <div className="App">
         <Stats />
         <Articles />
       <Footer />
