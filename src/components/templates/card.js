@@ -1,12 +1,12 @@
 import React from "react";
 
-const StyledCard = (props) => <a {...props} className="w-full sm:w-1/2 h-full p-4" />;
+const StyledCard = (props) => <a {...props} className="w-full sm:w-1/2 h-full p-4 font-body" />;
 
-const StyledImage = (props) => <div {...props} className="block inset-0 w-full h-full rounded-lg bg-no-repeat bg-center bg-cover" />;
+const Image = (props) => <div {...props} className="block inset-0 w-full h-full rounded-lg bg-no-repeat bg-center bg-cover" />;
 
-const StyledWrapper = (props) => <div {...props} className="px-8 py-20 relative z-10 w-full h-full rounded-lg p-6 bg-black opacity-0 sm:hover:opacity-75" />;
+const Wrapper = (props) => <div {...props} className="px-8 py-20 relative z-10 w-full h-full rounded-lg p-6 bg-black opacity-0 sm:hover:opacity-75" />;
 
-const StyledTitle = (props) => <div {...props} className="tracking-widest px-8 text-4xl font-bold text-white" />;
+const Title = (props) => <div {...props} className="tracking-widest px-8 text-4xl font-bold text-white" />;
 
 const Tag = (props) => <span {...props} className="w-full sm:w-1/2 h-full p-1" />;
 
@@ -15,17 +15,17 @@ const TagList = (props) => <div {...props} className="font-semibold text-gray-50
 const Card = (props) => {
   return (
     <StyledCard>
-      <StyledImage
+      <Image
         class="card-link card-image"
         href={props.cardLink}
         style={{ backgroundImage: `url(${props.cardImage})` }}>
-<StyledWrapper>
-          <StyledTitle
+<Wrapper>
+          <Title
             class="card-title"
             className=""
           >
             {props.cardTitle}
-          </StyledTitle>
+          </Title>
           <TagList>
             <Tag
               class="tag-first"
@@ -41,8 +41,8 @@ const Card = (props) => {
               {props.tagThird}
             </Tag>
             </TagList>
-        </StyledWrapper>
-        </StyledImage>
+        </Wrapper>
+        </Image>
       </StyledCard>
   );
 };

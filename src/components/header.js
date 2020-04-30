@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 // Import Browser Router and Pages
-import { NavLink } from 'react-router-dom'; 
-import DarkModeToggle from './darkMode';
+import { NavLink } from "react-router-dom";
+import DarkModeToggle from "./darkMode";
 
-const StyledHeader = (props) => <header {...props} className="body-font" />;
+const StyledHeader = (props) => <header {...props} className="font-body" />;
 
 const Container = (props) => (
   <div
@@ -27,28 +27,27 @@ const Link = (props) => (
 class Header extends Component {
   render() {
     return (
-<StyledHeader>
-      <Container>
-        <Nav>
-          {[
-            {
-              route: `/`,
-              title: `Work`,
-            },
-            {
-              route: `/about`,
-              title: `About`,
-            },
-          ].map((link) => (
-            <Link key={link.title} to={link.route}>
-              {link.title}
-            </Link>
-          ))}
-        </Nav>{" "}
-        <DarkModeToggle />
-      </Container>{" "}
-    </StyledHeader>
-    
+      <StyledHeader>
+        <Container>
+          <Nav>
+            {[
+              {
+                route: `/`,
+                title: `Work`,
+              },
+              {
+                route: `/about`,
+                title: `About`,
+              },
+            ].map((link) => (
+              <Link key={link.title} to={link.route}>
+                {link.title}
+              </Link>
+            ))}
+          </Nav>{" "}
+          <DarkModeToggle />
+        </Container>{" "}
+      </StyledHeader>
     );
   }
 }

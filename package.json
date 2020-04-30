@@ -10,9 +10,13 @@
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-feather": "^2.0.8",
     "react-helmet-async": "^1.0.5",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-toggle": "^4.1.1",
+    "typewriter-effect": "^2.13.0",
+    "use-dark-mode": "^2.3.1"
   },
   "scripts": {
     "start": "npm run watch:css && react-scripts start",
