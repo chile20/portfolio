@@ -10,7 +10,7 @@ import Header from './components/header';
 function App() {
   return (
     <BrowserRouter basename="/portfolio"> 
-    <div className="App font-body">
+    <div className="App body-font">
       <Header />
       <Switch>
           <Route exact path="/">

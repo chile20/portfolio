@@ -5,7 +5,7 @@ class Stats extends Component {
   render() {
     return (
 
-<section className="body-font">
+<section className="">
   <div className="max-w-6xl mx-auto py-4 px-4">
 
     <div className="border border-gray-300 p-2 sm:py-4 rounded-lg">

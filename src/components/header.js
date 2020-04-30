@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import DarkModeToggle from "./darkMode";
 
-const StyledHeader = (props) => <header {...props} className="font-body" />;
+const StyledHeader = (props) => <header {...props} className="" />;
 
 const Container = (props) => (
   <div

@@ -1,6 +1,6 @@
 import React from "react";
 
-const StyledCard = (props) => <a {...props} className="w-full sm:w-1/2 h-full p-4 font-body" />;
+const StyledCard = (props) => <a {...props} className="w-full sm:w-1/2 h-full p-4" />;
 
 const Image = (props) => <div {...props} className="block inset-0 w-full h-full rounded-lg bg-no-repeat bg-center bg-cover" />;
 

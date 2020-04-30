@@ -10,7 +10,7 @@ import coverLeap from "../../assets/images/img-cover-leap.png";
 class Articles extends Component {
   render() {
     return (
-      <section className="text-gray-700 body-font">
+      <section className="text-gray-700">
         <div className="container max-w-4xl mx-auto sm:py-4 px-4">
           <div className="flex flex-row flex-wrap -mx-4">
             <Card

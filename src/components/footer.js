@@ -5,7 +5,7 @@ import IconTwitter from "./icons/twitter";
 import IconGithub from "./icons/github";
 
 const StyledFooter = (props) => (
-  <footer {...props} className="text-gray-500 font-body" />
+  <footer {...props} className="text-gray-500" />
 );
 
 const Container = (props) => (
