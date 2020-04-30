@@ -1,18 +1,18 @@
 // src/Work.js
 import React from "react";
 // Import Components
-import Footer from '../components/footer';
-import Stats from '../components/stats';
-import Articles from '../components/articles';
+import Footer from "../components/footer";
+import Articles from "../components/articles";
+import Hero from "../components/hero";
 
 function Work(props) {
   return (
     <div className="App">
-        <Stats />
-        <Articles />
+      <Hero />
+      <Articles />
       <Footer />
     </div>
   );
 }
- 
+
 export default Work;
