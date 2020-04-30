@@ -1,7 +1,3 @@
-html {
-  @apply font-body
-}
-
 /*Dark mode*/
 
 body.light-mode {
