@@ -7,7 +7,7 @@ import { ArrowRight } from "react-feather";
 const Section = (props) => <div {...props} className="max-w-4xl p-4 mx-auto font-body" />;
 
 const Container = (props) => (
-  <div {...props} className="w-full h-screen py-16 md:py-40 font-bold " />
+  <div {...props} className="w-full h-screen py-16 md:py-40 font-semibold " />
 );
 
 const Heading = (props) => (

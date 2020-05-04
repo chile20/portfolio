@@ -8,9 +8,9 @@ const Wrapper = (props) => <div {...props} className="px-8 py-20 relative z-10 w
 
 const Title = (props) => <div {...props} className="tracking-widest px-8 text-4xl font-bold text-white text-center" />;
 
-const Tag = (props) => <span {...props} className="w-full sm:w-1/2 h-full p-1" />;
+// const Tag = (props) => <span {...props} className="w-full sm:w-1/2 h-full p-1" />;
 
-const TagList = (props) => <div {...props} className="font-semibold text-gray-500 px-8 self-center" />;
+// const TagList = (props) => <div {...props} className="font-semibold text-base text-gray-500 px-8 content-center" />;
 
 const Card = (props) => {
   return (
@@ -26,7 +26,7 @@ const Card = (props) => {
           >
             {props.cardTitle}
           </Title>
-          <TagList>
+          {/* <TagList>
             <Tag
               class="tag-first"
             >
@@ -40,7 +40,7 @@ const Card = (props) => {
             <Tag class="tag-third">
               {props.tagThird}
             </Tag>
-            </TagList>
+            </TagList> */}
         </Wrapper>
         </Image>
       </StyledCard>
