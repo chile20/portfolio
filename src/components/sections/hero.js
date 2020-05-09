@@ -4,37 +4,32 @@ import Typewriter from "typewriter-effect";
 import Resume from "../../assets/chile-resume.pdf";
 import { ArrowRight } from "react-feather";
 
-const Section = (props) => <div {...props} className="max-w-4xl p-4 mx-auto font-body" />;
+const Section = (props) => <div {...props} className="max-w-6xl p-4 mx-auto font-body" />;
 
 const Container = (props) => (
-  <div {...props} className="w-full h-screen py-16 md:py-40 font-semibold " />
-);
-
-const Heading = (props) => (
-  <h1 {...props} className="text-left title-font sm:text-4xl text-2xl py-2" />
+  <div {...props} className="w-full py-16 md:py-24 font-light" />
 );
 
 const Wrapper = (props) => (
-  <div {...props} className="title-font py-2 sm:text-4xl text-2xl flex" />
+  <div {...props} className="title-font py-2 sm:text-4xl text-2xl md:flex flex-row text-center md:text-left" />
 );
 
 const Intro = (props) => (
   <h1 {...props} className="pr-2 sm:pr-3 content-center " />
 );
 
-const Span = (props) => <div {...props} className="text-orange-400" />;
+const Span = (props) => <div {...props} className="" />;
 
 const Button = (props) => (
-  <button
+  <div
     {...props}
-    className="flex focus:outline-none md:hover:text-orange-400 my-4 py-2"
-  />
+    className="flex focus:outline-none text-orange-400 my-4 py-2 justify-center md:justify-start"
+  /> 
 );
-
 const Link = (props) => (
   <a
     {...props}
-    className="focus:outline-none font-semibold pr-2 font-bold"
+    className="focus:outline-none pr-2 font-light"
   />
 );
 
@@ -42,9 +37,8 @@ function Hero() {
   return (
     <Section>
       <Container>
-        <Heading>Hi, I am Chi</Heading>
         <Wrapper>
-          <Intro>I am a</Intro>
+          <Intro>Chi Le is an aspiring</Intro>
           <Span>
             <Typewriter
               options={{

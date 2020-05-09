@@ -8,7 +8,7 @@ const StyledHeader = (props) => <header {...props} className="" />;
 const Container = (props) => (
   <div
     {...props}
-    className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto"
+    className="flex flex-wrap items-center justify-between max-w-6xl px-4 py-8 mx-auto"
   />
 );
 

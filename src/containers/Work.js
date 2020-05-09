@@ -2,6 +2,7 @@
 import React from "react";
 // Import Components
 import Footer from "../components/footer";
+import CaseStudy from "../components/sections/caseStudy";
 import Articles from "../components/sections/articles";
 import Hero from "../components/sections/hero";
 
@@ -9,7 +10,7 @@ function Work(props) {
   return (
     <div className="App">
       <Hero />
-      <Articles />
+      <CaseStudy />
       <Footer />
     </div>
   );
