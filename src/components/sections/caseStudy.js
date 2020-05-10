@@ -1,59 +1,96 @@
 import React, { Component } from "react";
 // Import Components
 // Import Photos
-import coverDoyou from "../../assets/images/img-cover-doyou.png";
-import coverTravaria from "../../assets/images/img-cover-travaria.png";
-import coverDoyou2 from "../../assets/images/img-cover-doyou2.png";
-import coverLeap from "../../assets/images/img-cover-leap.png";
 import coverSB from "../../assets/images/starbucks-2x.png";
+import coverKos from "../../assets/images/kos-2x.gif"
+
+const Section = (props) => <div {...props} className="max-w-4xl p-4 mx-auto font-body" />;
+
+const Category = (props) => (
+  <div {...props} className="absolute float-left -mx-32" />
+);
+
+const TextSide = (props) => (
+  <h1 {...props} className="font-semibold text-gray-400 tracking-widest text-2xl vertical-rl hidden sm:block pl-10" />
+);
+
+const Border = (props) => (
+  <div {...props} className="h-24 w-1 border-l-2 border-gray-400 m-4 hidden sm:block" />
+);
+
+const TextMiddle = (props) => (
+  <h1 {...props} className="font-semibold tracking-widest text-2xl text-center py-10 md:hidden" />
+);
+
+const Container = (props) => (
+  <div {...props} className="flex flex-row flex-wrap" />
+);
+
+const WrapperLeft = (props) => (
+  <div {...props} className="sm:w-1/2 pt-4 sm:pt-0 sm:mt-0 sm:pr-10" />
+);
+
+const WrapperRight = (props) => (
+  <div {...props} className="sm:w-1/2 pt-10 sm:pl-10 sm:pt-20" />
+);
+
+const Title = (props) => (
+  <div {...props} className="font-light text-center pt-10" />
+);
+
+const Subtitle = (props) => (
+  <div {...props} className="font-light text-center text-gray-500 pt-1" />
+);
+
+const Project = [
+  {
+    title: "Starbucks Redesign",
+    subtitle: "Interaction design",
+    url: "https://coursework.vschool.io/mapping-components-in-react/",
+    img: coverSB,
+    type: "left"
+  },
+  {
+    title: "Starbucks Redesign",
+    subtitle: "Interaction design",
+    url: "https://coursework.vschool.io/mapping-components-in-react/",
+    img: coverKos,
+    type: "right"
+  },
+]
 
 class CaseStudy extends Component {
   render() {
     return (
-      <section className="max-w-6xl mx-auto px-4 sm:flex">
-                  <h1 className="absolute font-semibold text-gray-400 tracking-widest text-2xl vertical-rl hidden sm:block pl-10">
-            Case Study
-          </h1>
-        <div className="sm:w-1/7">
-          <h1 className="font-semibold tracking-widest text-2xl text-center py-10 sm:hidden">
-            Case Study
-          </h1>
-          <h1 className="font-semibold text-gray-400 tracking-widest text-2xl vertical-rl hidden sm:block pl-10">
-            Case Study
-          </h1>
-            <div className="h-40 w-1 border-l-2 border-gray-400 m-4 hidden sm:block"></div>
-        </div>
-        <div className="flex flex-wrap">
-          <div className="sm:w- pt-4 sm:pt-0 pb-10 sm:mt-0 sm:mx-10">
-            <img src={coverSB} />
-            <h1 className="font-light text-center pt-10">Starbucks Redesign</h1>
-            <h1 className="font-light text-center text-gray-500 pt-1">
-              Interaction Design
-            </h1>
-          </div>
-          <div className="sm:w- pt-10 pb-10 sm:mx-10 sm:pt-40">
-            <img src={coverSB} />
-            <h1 className="font-light text-center pt-10">Starbucks Redesign</h1>
-            <h1 className="font-light text-center text-gray-500 pt-1">
-              Interaction Design
-            </h1>
-          </div>
-          <div className="sm:w-3/7 pt-4 sm:pt-0 pb-10 sm:mt-0 sm:mx-10">
-            <img src={coverSB} />
-            <h1 className="font-light text-center pt-10">Starbucks Redesign</h1>
-            <h1 className="font-light text-center text-gray-500 pt-1">
-              Interaction Design
-            </h1>
-          </div>
-          <div className="sm:w-3/7 pt-10 pb-10 sm:mx-10 sm:pt-40">
-            <img src={coverSB} />
-            <h1 className="font-light text-center pt-10">Starbucks Redesign</h1>
-            <h1 className="font-light text-center text-gray-500 pt-1">
-              Interaction Design
-            </h1>
-          </div>
-        </div>
-      </section>
+      <Section>
+        <Category>
+          <TextSide>Case Study</TextSide>
+          <Border />
+        </Category>
+        <TextMiddle>
+          Case Study
+          </TextMiddle>
+        <Container>
+          {Project.map(project =>
+            project.type === "left" ? (
+              <WrapperLeft
+              href={project.url}>
+              <img src={project.img} />
+              <Title>{project.title}</Title>
+              <Subtitle>{project.subtitle}</Subtitle>
+            </WrapperLeft>
+            ) : (
+              <WrapperRight
+              href={project.url}>
+              <img src={project.img} />
+              <Title>{project.title}</Title>
+              <Subtitle>{project.subtitle}</Subtitle>
+            </WrapperRight>
+              )
+          )}
+        </Container>
+      </Section>
+
     );
   }
 }

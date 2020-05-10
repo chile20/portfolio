@@ -562,7 +562,7 @@ iframe,
 embed,
 object {
   display: block;
-  /* vertical-align: middle; */
+  vertical-align: middle;
 }
 
 /**
@@ -18515,7 +18515,7 @@ video {
   }
 
   .sm\:tracking-widest {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.25em;
   }
 
   .sm\:select-none {
@@ -28823,7 +28823,7 @@ video {
   }
 
   .md\:tracking-widest {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.25em;
   }
 
   .md\:select-none {
@@ -39131,7 +39131,7 @@ video {
   }
 
   .lg\:tracking-widest {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.25em;
   }
 
   .lg\:select-none {
@@ -49439,7 +49439,7 @@ video {
   }
 
   .xl\:tracking-widest {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.25em;
   }
 
   .xl\:select-none {

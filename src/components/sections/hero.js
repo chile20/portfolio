@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 import Resume from "../../assets/chile-resume.pdf";
 import { ArrowRight } from "react-feather";
 
-const Section = (props) => <div {...props} className="max-w-6xl p-4 mx-auto font-body" />;
+const Section = (props) => <div {...props} className="max-w-4xl p-4 mx-auto font-body" />;
 
 const Container = (props) => (
   <div {...props} className="w-full py-16 md:py-24 font-light" />

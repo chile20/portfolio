@@ -11,7 +11,7 @@ class Articles extends Component {
   render() {
     return (
       <section className="text-gray-700">
-        <div className="max-w-6xl mx-auto sm:py-4 px-4">
+        <div className="max-w-4xl mx-auto sm:py-4 px-4">
           <div className="flex flex-row flex-wrap -mx-4">
             <Card
               cardLink={
