@@ -3,7 +3,8 @@ import React from "react";
 // Import Components
 import Footer from "../components/footer";
 import CaseStudy from "../components/sections/caseStudy";
-import Articles from "../components/sections/articles";
+import VisualDesign from "../components/sections/visualDesign";
+import Others from "../components/sections/otherDesign";
 import Hero from "../components/sections/hero";
 
 function Work(props) {
@@ -11,6 +12,8 @@ function Work(props) {
     <div className="App">
       <Hero />
       <CaseStudy />
+      <VisualDesign />
+      <Others />
       <Footer />
     </div>
   );

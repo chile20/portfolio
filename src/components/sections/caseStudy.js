@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 // Import Components
 // Import Photos
+import coverTravaria from "../../assets/images/img-cover-travaria.png";
 import coverSB from "../../assets/images/starbucks-2x.png";
 import coverKos from "../../assets/images/kos-2x.gif"
 
-const Section = (props) => <div {...props} className="max-w-4xl p-4 mx-auto font-body" />;
+const Section = (props) => <div {...props} className="max-w-4xl p-4 sm:pb-16 mx-auto font-body" />;
 
 const Category = (props) => (
   <div {...props} className="absolute float-left -mx-32" />
@@ -27,35 +28,28 @@ const Container = (props) => (
 );
 
 const WrapperLeft = (props) => (
-  <div {...props} className="sm:w-1/2 pt-4 sm:pt-0 sm:mt-0 sm:pr-10" />
+  <a {...props} className="sm:w-1/2 pt-4 sm:pt-0 sm:mt-0 sm:pr-10" />
 );
 
 const WrapperRight = (props) => (
-  <div {...props} className="sm:w-1/2 pt-10 sm:pl-10 sm:pt-20" />
+  <a {...props} className="sm:w-1/2 pt-10 sm:pl-10 sm:pt-20" />
 );
 
 const Title = (props) => (
-  <div {...props} className="font-light text-center pt-10" />
+  <div {...props} className="font-semibold text-center pt-10" />
 );
 
 const Subtitle = (props) => (
-  <div {...props} className="font-light text-center text-gray-500 pt-1" />
+  <div {...props} className="font-light= text-center text-gray-500 pt-1" />
 );
 
 const Project = [
   {
-    title: "Starbucks Redesign",
-    subtitle: "Interaction design",
-    url: "https://coursework.vschool.io/mapping-components-in-react/",
-    img: coverSB,
+    title: "Travaria - A travel platform",
+    subtitle: "MVP in Product Design",
+    url: "https://www.behance.net/gallery/95472757/Travaria-Case-Study",
+    img: coverTravaria,
     type: "left"
-  },
-  {
-    title: "Starbucks Redesign",
-    subtitle: "Interaction design",
-    url: "https://coursework.vschool.io/mapping-components-in-react/",
-    img: coverKos,
-    type: "right"
   },
 ]
 
@@ -72,6 +66,16 @@ class CaseStudy extends Component {
           </TextMiddle>
         <Container>
           {Project.map(project =>
+              <WrapperLeft
+              href={project.url}
+              target="_blank"
+              >
+              <img src={project.img} />
+              <Title>{project.title}</Title>
+              <Subtitle>{project.subtitle}</Subtitle>
+            </WrapperLeft>
+          )}
+          {/* {Project.map(project =>
             project.type === "left" ? (
               <WrapperLeft
               href={project.url}>
@@ -87,7 +91,7 @@ class CaseStudy extends Component {
               <Subtitle>{project.subtitle}</Subtitle>
             </WrapperRight>
               )
-          )}
+          )} */}
         </Container>
       </Section>
 
