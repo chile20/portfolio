@@ -7,7 +7,7 @@ import coverEnvelope from "../../assets/images/img-cover-redenvelope.png";
 import coverFire from "../../assets/images/img-cover-firetshirt.png";
 import coverCosmadetic from "../../assets/images/img-cover-cosmadetic.jpg";
 
-const Section = (props) => <div {...props} className="max-w-4xl mx-auto sm:pt-32 font-body" />;
+const Section = (props) => <div {...props} className="max-w-4xl mx-auto sm:pt-16 font-body" />;
 
 const Category = (props) => (
   <div {...props} className="absolute float-left -mx-32 pt-4  " />
