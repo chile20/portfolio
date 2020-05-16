@@ -29,7 +29,7 @@ const Button = (props) => (
 const Link = (props) => (
   <a
     {...props}
-    className="focus:outline-none pr-2 font-light"
+    className="focus:outline-none pr-2 font-medium"
   />
 );
 
@@ -54,7 +54,9 @@ function Hero() {
           </Span>
         </Wrapper>
         <Button>
-          <Link href={Resume} download>
+          <Link
+           href="https://drive.google.com/file/d/1jASRXiGxuG9CywKOwRd_6-FOWWR17SJM/view?usp=sharing"
+           target="_blank">
             DOWNLOAD CV
           </Link>
           <ArrowRight />
