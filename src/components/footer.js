@@ -36,16 +36,19 @@ function Footer() {
       <Container>
         <Copyright>© 2020 - by Chi Le</Copyright>
         <Social>
-          <SocialLink href="/">
+          <SocialLink 
+          target="_blank"
+          href="https://www.facebook.com/chile206/">
             <IconFacebook />
           </SocialLink>
-          <SocialLink href="/">
+          <SocialLink 
+          target="_blank"
+          href="https://twitter.com/chile206/">
             <IconTwitter />
           </SocialLink>
-          <SocialLink href="/">
-            <IconInstagram />
-          </SocialLink>
-          <SocialLink href="/">
+          <SocialLink 
+          target="_blank"
+          href="https://github.com/chile20/">
             <IconGithub />
           </SocialLink>
         </Social>
