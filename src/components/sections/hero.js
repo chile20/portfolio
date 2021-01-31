@@ -38,7 +38,7 @@ function Hero() {
     <Section>
       <Container>
         <Wrapper>
-          <Intro>Chi Le is an aspiring</Intro>
+          <Intro>Chi Le is a</Intro>
           <Span>
             <Typewriter
               options={{
@@ -55,7 +55,7 @@ function Hero() {
         </Wrapper>
         <Button>
           <Link
-           href="https://drive.google.com/file/d/1jASRXiGxuG9CywKOwRd_6-FOWWR17SJM/view?usp=sharing"
+           href="https://docs.google.com/document/d/1q8FQTOwXN0Pf-pae-NeX9w7gNZtw9KrTCyRITrVNhKM/edit?usp=sharing"
            target="_blank">
             DOWNLOAD CV
           </Link>
