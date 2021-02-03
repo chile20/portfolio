@@ -15,9 +15,9 @@ function App() {
           <Route exact path="/">
             <Work />
           </Route>
-          <Route path="/about">
+          {/* <Route path="/about">
             <About />
-          </Route>
+          </Route> */}
       </Switch>
     </div>
     </BrowserRouter>
