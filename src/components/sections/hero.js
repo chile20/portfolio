@@ -57,7 +57,7 @@ function Hero() {
           <Link
            href="https://docs.google.com/document/d/1q8FQTOwXN0Pf-pae-NeX9w7gNZtw9KrTCyRITrVNhKM/edit?usp=sharing"
            target="_blank">
-            DOWNLOAD CV
+            DOWNLOAD RESUME
           </Link>
           <ArrowRight />
         </Button>
